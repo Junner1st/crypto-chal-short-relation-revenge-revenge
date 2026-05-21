@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: token-service-5
+    ports:
+      - "1344:5000"
+    environment:
+      FLAG: "CCCTF{end0morphism_3ndonnorphism_eNdomorFAAhhhh_}"
+    restart: unless-stopped
